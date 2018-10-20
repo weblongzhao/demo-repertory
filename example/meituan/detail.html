@@ -1,0 +1,656 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>美团详情页</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/hdfoot.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/detail.css"/>
+</head>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$(function (){
+	$('.mm_phone').hover(function (){
+		$('.mm_phone_pos').css('display','block')
+		$('.mm_phone_a').addClass('mm_phonehover')
+	
+		},function (){
+		$('.mm_phone_pos').css('display','none');
+		$('.mm_phone_a').removeClass('mm_phonehover')
+		})
+		
+		
+	$('.mine_box').hover(function (){
+		
+		$('.mm_mine').css('display','block');
+		$('.mine_box .meituan').addClass('mine_box2hover')
+		},function (){
+		$('.mm_mine').css('display','none')	
+		$('.mine_box .meituan').removeClass('mine_box2hover')
+		});
+	
+	$('.mine_box2').hover(function (){
+		$('.mm_see_pos').css('display','block')
+		$('.mine_box2 .mm_see').addClass('mine_box2hover')
+		},function (){
+		$('.mm_see_pos').css('display','none')	
+		$('.mine_box2 .mm_see').removeClass('mine_box2hover')
+		});
+	$('.mm_shop').hover(function (){
+		$('.mm_shop_pos').css('display','block')
+		$('.mm_shop .mm_see').addClass('mine_box2hover')
+		},function (){
+		$('.mm_shop_pos').css('display','none')
+		$('.mm_shop .mm_see').removeClass('mine_box2hover')	
+		})
+	
+	
+	$('.mm_contact').hover(function (){
+		$('.mm_contact_pos').css('display','block')
+		$('.mm_contact .mm_see').addClass('mine_box2hover')
+		},function (){
+		$('.mm_contact_pos').css('display','none')
+		$('.mm_contact .mm_see').removeClass('mine_box2hover')	
+		})
+	
+	$('.mm_w95px').hover(function (){
+		$('.mm_w95px_pos').css('display','block')
+		$('.mm_w95px .mm_see').addClass('mine_box2hover')
+		},function (){
+		$('.mm_w95px_pos').css('display','none')
+		$('.mm_w95px .mm_see').removeClass('mine_box2hover')	
+		})
+	
+	$('.mm_more').hover(function (){
+		$('.mm_more_pos').css('display','block')
+		$('.mm_more .mm_see').addClass('mine_box2hover')
+		},function (){
+		$('.mm_more_pos').css('display','none')
+		$('.mm_more .mm_see').removeClass('mine_box2hover')	
+		})
+	
+})
+</script>
+
+<body>
+<!--头部开始-->
+<div class="mm_header">
+	<div class="mm_hd_box wrap clearFix">
+    	<ul class="mm_hd_box_l fl clearFix">
+        	<li><a href="javascript">美团一次 美一次</a></li>
+            <li><a class="colorf76120" href="login.html">登录</a></li>
+            <li class="mm_regist"><a href="register-email.html">注册</a></li>
+            <li class="mm_phone">
+            	<i></i>
+            	<a class="mm_phone_a" href="javascript:;">手机美团</a>
+                <div class="mm_phone_pos">
+                	<div class="mm_phone_pos_tit">
+                		<b>|</b><a href="javascript">免费下载美团手机版</a>
+                    </div>
+                    <img src="images/ma.jpg" alt="" />
+                    <p></p>
+                    <div class="mm_phone_pos_tit">
+                		<b>|</b><a href="javascript">免费下载美团手机版</a>
+                    </div>
+                    <img src="images/ma.jpg" alt="" />
+                </div>
+            </li>
+            
+        </ul>
+        <div class="mm_hd_box_r_box fr">
+      		 <ul class="mm_hd_box_r clearFix">
+        	<li class="mm_fist">
+            	<a href="javascript:;">我的订单</a>
+            </li>
+            <li class="mine_box">
+            	<a class="meituan clearFix" href="javascript:;"><span>我的美团</span><i></i></a>
+                <div class="mm_mine">
+                	<a href="javascript:;">我的订单</a>
+                    <a href="javascript:;">我的评价</a>
+                    <a href="javascript:;">我的收藏</a>
+                    <a href="javascript:;">我的积分</a>
+                    <a href="javascript:;">抵用券</a>
+                    <a href="javascript:;">美团余额</a>
+                    <a href="javascript:;">账户充值</a>
+                    <a href="javascript:;">账户设置</a>
+                    
+                </div>
+            </li>
+            <li class="mine_box2">
+            	<a class="mm_see clearFix" href="javascript:;"><span>最近浏览</span><i></i></a>
+                <div class="mm_see_pos">
+                	暂无浏览记录
+                </div>
+            </li>
+            <li class="mm_shop">
+            	<a class="mm_see" href="javascript:;"><span>购物车<em>0</em>件</span><i></i></a>
+                <div class="mm_shop_pos"></div>
+            </li>
+            <li class="mm_contact">
+            	<a class="mm_see" href="javascript:;"><span>联系客服</span><i></i></a>
+                <div class="mm_contact_pos">
+                	<a href="javascript">申请退款</a>
+                    <a href="javascript">申请退款</a>
+                    <a href="javascript">申请退款</a>
+                    <a href="javascript">申请退款</a>
+                    <a href="javascript">申请退款</a>
+                </div>
+            </li>
+            <li class="mm_w95px">
+            	<a class="mm_see" href="javascript:;"><span>我是商家</span><i></i></a>
+                <div class="mm_w95px_pos">
+                	<a href="javascript:;">我想合作</a>
+                    <a href="javascript:;">我想合作</a>
+                    <a href="javascript:;">我想合作</a>
+                </div>
+                
+            </li>
+            <li class="mm_more">
+            	<a  class="mm_see"  href="javascript:;"><span>更多</span><i></i></a>
+                <div class="mm_more_pos">
+                	<a href="javascript:;">手机版</a>
+                    <a href="javascript:;">我想合作</a>
+                    <a href="javascript:;">我想合作</a>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+<!--!--logosearch开始-->
+<div class="mm_logosearch wrap clearFix">
+	<div class="mm_logo fl clearFix">
+    	<h1 class="mm_logopic fl"><a href="javascript:;">美团网</a></h1>
+        <a href="javascript" class="mm_city fl">
+        	<p>北京</p>
+            <span>切换城市</span>
+        </a>
+    </div>
+    <div class="mm_search fl">
+    	<div class="mm_search_top clearFix">
+        	<div class="mm_text fl">
+            	<p class="fl">团购
+                	
+                </p>
+                <input class="fl mm_txt" type="text" placeholder="请输入商品名称、地址等" />
+              </div>
+             <input class="fl mm_sub" type="submit" value="搜索" />
+        </div>
+        <div class="mm_search_b clearFix">
+        	<a href="javascript:;">电影</a>
+            <a href="javascript:;">自助餐</a>
+            <a href="javascript:;">KTV</a>
+            <a href="javascript:;">生日蛋糕</a>
+            <a href="javascript:;">烤肉</a>
+            <a href="javascript:;">烤鱼</a>
+            <a href="javascript:;">按摩</a>
+            <a href="javascript:;">汉丽轩</a>
+            <a href="javascript:;">电影票</a>
+            <a href="javascript:;">蛋糕</a>
+        </div>
+    </div>
+    <div class="mm_tips fl">
+    	<a class="mm_anytime fl" href="javascript:;"></a>
+        <a class="mm_free fl" href="javascript:;"></a>
+        <a class="mm_overdue fl" href="javascript:;"></a>
+    </div>
+</div>
+<!--nav开始-->
+<div class="mm_nav wrap clearFix">
+	<div class="mm_nav_left fl clearFix">
+    	<h3 class="fl">全部商品分类</h3>
+    	<span class="fr"></span>
+    </div>
+    <div class="mm_nav_right fl clearFix">
+    	<a href="javascript:;">首页</a>
+        <a href="javascript:;">身边团购</a>
+        <a href="javascript:;">身边外卖</a>
+        <a href="javascript:;">今日新单</a>
+        <a href="javascript:;">购物</a>
+        <a href="javascript:;">商家点评</a>
+        <a href="javascript:;">大牌街</a>
+      
+    </div>
+</div>
+<!--头部结束-->
+
+<div class="z_detailBox">
+    	<div class="z_bread_nav">
+        	<a href="javascript:;">北京团购</a>
+            <span>>></span>
+        	<a href="javascript:;">美食团购</a>
+            <span>>></span>
+        	<a href="javascript:;">烧烤烤肉</a>
+            <span>>></span>
+        	<a href="javascript:;">丰台区</a>
+            <span>>></span>
+        	<a href="javascript:;">方庄/黄浦渝</a>
+            <span>>></span>
+        	<a href="javascript:;">燕京啤酒花园</a>
+        </div>
+        <div class="z_detailCon">
+        	<p class="z_detailTit">
+            	【方庄/蒲黄榆】燕京啤酒花园
+            </p>
+            <p class="z_deal_description">
+            	仅售19.8元！价值68元的红烧金枪鱼一份，提供免费WIFI。中国水产直供超低温金枪鱼。盛夏消暑撸串圣地，就在燕京啤酒花园。
+            </p>
+            <div class="z_detail_container clearFix">
+            	<div class="z_Dcon_left fl">
+                	<img src="images/z_pic1.jpg" alt="" title="燕京啤酒" class="z_con_pic"/>
+                    <img src="images/pic2.png" alt="" class="z_con_first_image" />
+                    <div class="z_posPic clearFix">
+                    	<span class="fl"></span>
+                        <em class="fl"></em>
+                        <b class="fl"></b>
+                    </div>
+                </div>
+                <div class="fr z_Dcon_right">
+                	<div class="z_detail_price clearFix">
+                    	<span class="fl">￥</span>
+                        <strong class="fl">19.8</strong>
+                        <div class="fl">
+                        	<p>2.9折</p>
+                            <p class="z_d_cost_price">￥68</p>
+                        </div>
+                    </div>
+                    <div class="z_component_rating clearFix">
+                    	<p class="fl z_Sold">
+                        	已售<span>0</span>
+                        </p>
+                        <p class="fl z_grade">
+                        	0人评价，暂无评分
+                        </p>
+                    </div>
+                    <div class="z_con_box">
+                        <div class="z_component_expiry">
+                            <p class="fl z_infor_tit">商家</p>
+                            <p class="fl clearFix">
+                            	<a href="javascript:;" class="z_ads fl">燕京啤酒花园（体育公园燕京啤酒花园）</a>
+                                <span class="fl">|</span>
+                                <a href="javascript:;" class="fl">查看地址和电话</a>
+                            </p>
+                            <p class="fr clearFix z_integral">
+                            	<span class="fl z_integral_tit">手机可用积分抵十元</span>
+                                <span class="fl z_qr_Code"></span>
+                            </p>
+                        </div>
+                        <div class="z_validity clearFix">
+                        	<p class="fl z_infor_tit">
+                            	有效期
+                            </p>
+                            <p class="fl z_validity_txt">
+                            	截止到2014-09-24
+                                <span>周末法定节假日通用</span>
+                            </p>
+                        </div>
+                        <div class="z_use_time clearFix">
+                        	<p class="z_infor_tit fl">使用时间</p>
+                            <p class=" fl">17:30-次日02:00</p>
+                        </div>
+                	</div>
+                    <div class="z_set_eraser clearFix">
+                        <p class="z_infor_tit fl">
+                            套餐
+                        </p>
+                        <p class="fl z_seteraser_price  clearFix">
+                            <span class="fl">2-8人餐30元</span>
+                            <span class="fl active">2-8人餐19.8元</span>
+                        </p>
+                   </div>
+                   <div class="z_detail_count clearFix">
+                    	<p class="z_infor_tit fl">数量</p>
+                        <p class="fl z_quantity">
+                        	1
+                        	<span class="fl">-</span>
+                            <span class="fr">+</span>
+                        </p>
+                    </div>
+                    <div class="zdetail_component_purchase_button clearFix">
+                    	<input type="button" value="" class="fl"/>
+                        <a class="fl z_shop_car" href="javascript:;">加入购物车</a>
+                        <a class="fl z_house" href="javascript:;">收藏(1)</a>
+                        <a class="fl z_share" href="javascript:;">分享到</a>
+                    </div>
+                    <div class="z_promise clearFix">
+                    	<p class="fl ">服务承诺</p>
+                        <a href="javascript:;" class="fl z_any_time">随时退</a>
+                        <a href="javascript:;" class="fl z_expire">过期退</a>
+                        <a href="javascript:;" class="fl z_Rapid">急速退</a>
+                        <a href="javascript:;" class="fl z_assess">真实评价</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------上半部分结束  宽度是980px------------------------->
+        <div class="z_bcon clearFix"><!--这个div是控制下半部分整体结构的宽度980px-->
+        	<div class="z_con_left"><!--这个div是下面部分的左边，没有写浮动。-->
+            	<div class="biz_title">
+                	<h3 class="fl">该商家的其他团购</h3>
+					<div class="fr clearFix">
+                    	<span class="fl">团购价</span>
+                        <span class="fl">门店价</span>
+                        <span class="fl">已售</span>
+                    </div>
+                </div>
+                <div class="z_adr">
+                	<a href="javascript:;">【方庄/蒲黄榆】金枪鱼刺身1份，半斤，提供免费WiFi</a>
+                    <div class="fr clearFix">
+                    	<span class="fl z_purchase">￥30</span>
+                        <span class="fl">￥108</span>
+                        <span class="fl">0</span>
+                    </div>
+                </div>
+                <div class="z_bus_infor clearFix">
+                	<span class="fl active">商家位置</span>
+                    <span class="fl">购买须知</span>
+                    <span class="fl">本单详情</span>
+                    <span class="fl">商家介绍</span>
+                    <span class="fl">服务评价(0)</span>
+                </div>
+                <div class="z_Blocation">
+                	<h3>商家位置</h3>
+                    <div class="z_location_con">
+                    	<div class="fl z_location_left">
+                        	<img src="images/zpic3.png" alt=""/ >
+                            <p>查看完整版地图</p>
+                        </div>
+                        <div class="fl z_location_right">
+                        	<p class="z_tit_adr">燕京啤酒花园（体育公园店）</p>
+                            <p class="z_score clearFix">
+                            	<span class="fl">商家累计评分</span>
+                                <span class="fl z_detail_star"></span>
+                                <span class="fl z_detail_sco">暂无评分</span>
+                            </p>
+                            <p class="z_adr_text clearFix">
+                            	<span class="fl">地址：</span>
+                                <span class="fl z_x_adr">丰台区方庄地区蒲芳路7号西（方庄环岛北 100米方庄体育公园东门）</span>
+                            </p>
+                            <p class="clearFix z_check_adr">
+                                <a href="javascript:;" class="fl">查看地图</a>
+                                <a href="javascript:;" class="fl">公交/驾车到这里去</a>
+                            </p>
+                            <p class="z_subwar">地铁：距蒲黄榆站约734米</p>
+                            <p class="z_tel">电话：18600682488</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="z_Purchase_information">
+                	<p class="z_buy_tit">
+                    	购买须知
+                    </p>
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl">有效期</dt>
+                        <dd class="z_list_right fl">2014.7.31 至 2014.9.29（周末、法定节假日通用）</dd>
+                    </dl>
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl">使用时间</dt>
+                        <dd class="z_list_right fl">2014.7.31 至 2014.9.29（周末、法定节假日通用）</dd>
+                    </dl>
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl">预约提醒</dt>
+                        <dd class="z_list_right fl">2014.7.31 至 2014.9.29（周末、法定节假日通用）</dd>
+                    </dl>
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl">限购限用提醒</dt>
+                        <dd class="z_list_right fl">2014.7.31 至 2014.9.29（周末、法定节假日通用）</dd>
+                    </dl>
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl">其它费用</dt>
+                        <dd class="z_list_right fl">2014.7.31 至 2014.9.29（周末、法定节假日通用）</dd>
+                    </dl>
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl">包间</dt>
+                        <dd class="z_list_right fl">2014.7.31 至 2014.9.29（周末、法定节假日通用）</dd>
+                    </dl>
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl">食堂外带</dt>
+                        <dd class="z_list_right fl">2014.7.31 至 2014.9.29（周末、法定节假日通用）</dd>
+                    </dl>
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl z_thr_tit">温馨提示</dt>
+						<dd  class="z_list_right fl">
+                        	团购用户不可同时享受商家其他优惠<br/>
+							方案内人数免费提供餐具，超出人数详询商家<br/>
+							酒水饮料等问题，请致电商家咨询，以商家反馈为准
+                        </dd>                   
+                    </dl> 
+                    <dl class="z_Purchase_information_list clearFix">
+                    	<dt class="z_list_left fl">食堂外带</dt>
+                        <dd class="z_list_right fl">2014.7.31 至 2014.9.29（周末、法定节假日通用）</dd>
+                    </dl>
+                </div>
+                <div class="z_single_detaila">
+                	<p class="z_buy_tit">
+                    	购买须知
+                    </p>
+                    <p class="z_delicacy">
+                    	美味尽享
+                    </p>
+                    <div class="z_set_meal_con clearFix">
+                    	<span class="fl">套餐内容</span>
+                        <ul class="fr clearFix">
+                        	<li class="fl">单价</li>
+                            <li class="fl">数量/规格</li>
+                            <li class="fl">小计</li>
+                        </ul>
+                    </div>
+                    <div class="z_dishes clearFix">
+                    	<span class="fl z_meat_diet">荤菜</span>
+                        <span class="fl">红烧金枪鱼块</span>
+                        <ul class="clearFix fr">
+                        	<li class="fl">￥68</li>
+                            <li class="fl">一份</li>
+                            <li class="fl">￥68</li>
+                        </ul>
+                    </div>
+                    <p class="z_single_detaila_price">
+                    	<span>价值：￥68</span>
+                        <span>美团价：￥68</span>	
+                    </p>
+                    <p class="z_napkin">·免费提供餐巾纸</p>
+                    <p class="z_delicacy">
+                    	美团推荐
+                    </p>
+                    <p class="z_practice">
+                    	红烧金枪鱼块：红烧金枪鱼做法
+                    </p>
+					<img src="images/z_pic3.jpg" alt="" />
+                </div>
+                <p class="z_evaluate">
+                	<span class="fl">消费评价</span>
+                    <span class="fr">我买过本单，<a href="javascript:;">我要评价</a></span>
+                </p> 
+                <p class="z_grade">
+                	暂无评分
+                </p>
+                <div class="z_all_eva clearFix">
+                	<span class="fl">全部评价</span>
+                    <div class="fr clearFix z_eva_right">
+                    	<div class="fl"><input type="checkbox" />有图片</div>
+                        <div class="fl"><input type="checkbox" />有内容的评价</div>
+                        <span class="fl">默认</span>
+                        <span class="fl">按时间</span>
+                    </div>
+                </div>
+                <p class="z_pj">
+                    暂无评价
+                </p>
+                <div class="z_pric_buy clearFix">
+                	<span class="fl">￥19.8元</span>
+                    <ul class="fl clearFix">
+                    	<li class="fl">
+                        	<p>门店价</p>
+                            <b>￥68</b>
+                        </li>
+                    	<li class="fl">
+                        	<p>折扣</p>
+                            <strong>2.9折</strong>
+                        </li>
+                    	<li class="fl">
+                        	<p>已售</p>
+                            <strong>0</strong>
+                        </li>
+                        
+                    </ul>
+                    <div class="fr clearFix">
+                    	<a href="javscript:;" class="fl z_a_buy">抢购</a>
+                        <a href="javscript:;" class="fl z_shop_car">立即购买</a>
+                    </div>
+                </div>
+                <div class="z_interest">
+                	<p class="z_interest_tit">您可能感兴趣的新品团购</p>
+                    <ul class="clearFix ">
+                    	<li class="fl z_interest_list">
+                        	<img src="images/z_pic4.jpg">
+                            <P>
+                            	<a href="javascript:;">【11店通用】摩堤工房：摩堤工房劲爆来袭...</a>
+                            </P>
+                            <p class="clearFix">
+                            	<span class="fl">
+                                	￥29.5元
+                                </span>
+                                <b class="fr"></b>
+                            </p>
+                        </li>
+                        <li class="fl z_interest_list">
+                        	<img src="images/z_pic4.jpg">
+                            <P>
+                            	<a href="javascript:;">【11店通用】摩堤工房：摩堤工房劲爆来袭...</a>
+                            </P>
+                            <p class="clearFix">
+                            	<span class="fl">
+                                	￥29.5元
+                                </span>
+                                <b class="fr"></b>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="z_meituan_phone">
+                	<img src="images/deal-mobile-app-promotion.v2779a0bc.png">
+                </div>
+			
+            </div>
+        </div>
+    </div>
+    
+<div class="wwfixed1">
+	<img src="images/fixed_j1.jpg" alt="" />
+</div>
+<div class="wwfixed2">
+	<img src="images/fixed_j2.jpg" alt="" />
+</div>
+
+    
+<div class="mm_foot">
+	<div class="wrap">
+    	<ul class="clearFix wrap mm_foot_box">
+        	<li class="fl">
+            	<h5>获取更新</h5>
+                <p><a href="javascript:;">邮件订阅</a></p>
+                <p><a href="javascript:;">iPhone/Android</a></p>
+                <p><a href="javascript:;">美团QQ空间</a></p>
+                <p><a href="javascript:;">美团新浪微博</a></p>
+                <p><a href="javascript:;">sitemap</a></p>
+                <p><a href="javascript:;">RSS订阅</a></p>
+            </li>
+            <li class="fl">
+            	<h5>商务合作</h5>
+                <p><a href="javascript:;">商务合作</a></p>
+                <p><a href="javascript:;">廉正邮箱</a></p>
+                <p><a href="javascript:;">美团商家营销平台</a></p>
+                <p><a href="javascript:;">市场合作</a></p>
+                <p><a href="javascript:;">美团联盟</a></p>
+                <a href="javascript:;">moc.nautiem@gnehznail</a>
+            </li>
+            <li class="fl">
+            	<h5>公司信息</h5>
+                <p><a href="javascript:;">关于美团</a></p>
+                <p><a href="javascript:;">美团承诺</a></p>
+                <p><a href="javascript:;">媒体报道</a></p>
+                <p><a href="javascript:;">加入我们</a></p>
+                <p><a href="javascript:;">法律声明</a></p>
+                <p><a href="javascript:;">用户协议</a></p>
+            </li>
+            <li class="fl">
+            	<h5>用户帮助</h5>
+                <p><a href="javascript:;">申请退款</a></p>
+                <p><a href="javascript:;">查看美团券密码</a></p>
+                <p><a href="javascript:;">常见问题</a></p>
+                <p><a href="javascript:;">开放API</a></p>
+                <p><a href="javascript:;">美团云</a></p>
+                <p><a href="javascript:;">反诈骗公告</a></p>
+            </li>
+            <li class="fl">
+            	<h3></h3>
+                <h6>退款、退换货、查看美团券</h6>
+                <a class="mm_last" href="javascript">参考教程，轻松搞定>></a>
+                <P class="mm_inctoduce">客服电话：400-660-5335</P>
+                <p class="mm_inctoduce">服务时间：每天9:00 - 22:00</p>
+            </li>
+        </ul>
+        <p class="mm_tac">©2015<a href="javascript:;">美团网团购</a> meituan.com <a href="javascript:;">京ICP证070791号</a> 京公网安备11010502025545号<a href="javascript:;"> 电子公告服务规则</a></p>
+        <div class="mm_foot_b clearFix">
+        	<a class="mm_news fl"></a>
+            <a class="mm_bao fl"></a>
+            <a class="mm_ch fl"></a>
+             <a class="mm_kh fl"></a>
+              <a class="mm_xf fl"></a>
+              
+        </div>
+   </div>
+   
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

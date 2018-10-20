@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/login.css" rel="stylesheet" />
+<script type="text/javascript">
+window.onload=function(){
+	var oDiv=document.getElementById('img');
+	var oI=document.getElementById('img_i');
+	oI.onclick=function(){
+		oDiv.style.display='none';
+		}
+};
+</script>
+</head>
+<body>
+		<div class="wjwrap">
+        	<h1>美团</h1>
+        	<div class="bd clearFix">
+            	<div class="left fl">
+                	<img src="images/wj_main.jpg" alt="" />
+                </div>
+                <div class="right fl">
+                	<h2 class="clearFix"><a class="fr" href="javascript:;">手机动态码登录</a>账号登录</h2>
+ 					<form action="" method="post">
+                        <div class="text">
+                            <input type="text" placeholder="手机号/用户名/邮箱" />
+                            <i class="text_icon"></i>
+                        </div>
+                        <div class="pass">
+                            <input type="password" placeholder="密码" />
+                            <i class="pass_icon"></i>
+                        </div>
+                        <div class="checkbox clearFix">
+                        	<div class="check_user fl">
+                                <input type="checkbox" />记住账号
+                            </div>
+                            <div class="check_login fl">
+                                <input type="checkbox" />下次自动登录
+                            </div>
+                            <a class="check_a fr" href="javascript">忘记密码？</a>
+                        </div>
+                        <div class="btn_login">
+                            <input type="button" value="登录" />
+                        </div>
+                        <p class="btn_p">还没有账号？<a href="javascript:;">免费注册</a></p>
+                    </form> 
+                    <div class="right_bottom">
+                    	<h4>用合作网站账号登录</h4>
+                        <div class="coop clearFix">
+                            <a class="qq fl mr15" href="javascript:;">QQ</a>
+                            <a class="pay fl mr10" href="javascript:;">支付宝</a>
+                            <a class="weibo fl mr11" href="javascript:;">微博</a>
+                            <a class="baidu fl" href="javascript:;">百度</a>
+                            <a class="qiu fl mr11" href="javascript:;">360</a>
+                            <a class="more fl" href="javascript:;">更多</a>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+            <div class="ft">
+            	<div class="ft_top clearFix">
+                	<div class="ft_list fl clearFix">
+                        <a href="javascript:;">关于美团</a>
+                        <a href="javascript:;">美团承诺</a>
+                        <a href="javascript:;">加入我们</a>
+                        <a href="javascript:;">商家入驻</a>
+                        <a href="javascript:;">帮助中心</a>
+                        <a class="tel_a" href="javascript:;">美团手机版</a>
+                    </div>
+                    <img class="fl" src="images/wj_pic.jpg" alt="" />
+                </div>
+                <div class="ft_btm">©2015 美团网团购 meituan.com 京ICP证070791号 京公网安备11010502025545号 电子公告服务规则</div>
+            </div>
+        </div>
+        <div class="edit"></div>
+        <div class="img" id="img">
+        	<i class="img_i" id="img_i"></i>
+        </div>
+</body>
+</html>

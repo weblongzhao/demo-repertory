@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+ul{width:920px;height:450px;border:1px solid #000;margin:30px auto;position:relative;overflow:hidden;}
+li{list-style:none;height:450px;position:absolute;left:0;top:0;width:860px}
+span{height:100%;width:20px;display:inline-block;}
+img{width:840px;height:100%;}
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var aLi=document.getElementsByTagName('li');
+	var aSpan=document.getElementsByTagName('span');
+	var liW=aLi[0].offsetWidth;
+	var spanWidth=aSpan[0].offsetWidth;
+	
+	for(var i=0;i<aLi.length;i++)
+	{
+		if(i != 0)
+		{
+			aLi[i].style.left=liW+(i-1)*spanWidth+'px';
+		}
+	}	
+	
+	for(var i=0;i<aLi.length;i++)
+	{
+		(function(index){
+			aLi[i].onmouseover=function (){
+				for(var i=0;i<aLi.length;i++)
+				{
+					if(index >= i)
+					{
+						move(aLi[i],{left:i*spanWidth})
+					}
+					else
+					{
+						move(aLi[i],{left:liW+(i-1)*spanWidth})
+					}
+				}	
+			};
+		})(i);
+	}
+	
+};
+</script>
+</head>
+
+<body>
+<ul id="box">
+	<li>
+    	<span style="background:#00F"></span><img src="images/11.jpg"/>
+    </li>
+	<li>
+    	<span style="background:#90F"></span><img src="images/22.jpg"/>
+    </li>
+	<li>
+    	<span style="background:#C00"></span><img src="images/33.jpg"/>
+    </li>
+	<li>
+    	<span style="background:#FF0"></span><img src="images/onepice.jpg"/>
+    </li>
+</ul>
+</body>
+</html>

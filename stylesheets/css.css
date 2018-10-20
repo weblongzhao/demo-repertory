@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+
+body{height:3000px;}
+
+clearfix:after{content:'';display:block;clear:both;}
+
+/*关于自己*/
+#myself{width:100%;height:1100px;position:relative;background:url(../images/1.jpg) no-repeat;background:cover;overflow:hidden;}
+
+/*上边*/
+#slogan{width:80%;height:300px;position:absolute;top:-200px;right:0;transition:1s all linear;background:url(../images/slogan.png) no-repeat 35px ;}
+
+
+/*左侧*/
+#column{width:19%;height:900px;position:absolute;top:3px;left:-500px;transition:1s all ease;}
+/*信息*/
+.me{width:100%;height:500px;background:rgba(0,0,0,.7);overflow:hidden;margin-bottom:3px;}
+.photo{width:80%;height:100px;background:url(../images/4.jpg) no-repeat;background-size:cover;margin:50px auto;border-radius:50%;}
+.me p{color:#fff;font-size:18px;text-align:center;line-height:50px;}
+/*掌握*/
+.skill{width:100%;height:400px;background:rgba(255,255,255,.5);}
+
+#right{width:80%;height:450px;position:absolute;top:300px;right:-1500px;transition:1s all ease;overflow:hidden;}
+#right ul{width:500%;height:450px;position:absolute;left:-100%;top:0;}
+#right ul li{float:left;width:20%;height:100%;background:rgba(0,0,0,.5);}
+#right ul li div{width:80%;margin:15px auto;}
+#right ul li h3{text-align:center;font-size:40px;margin-bottom:30px;}
+#right ul li p{line-height:45px;font-size:20px;}
+
+/*第二屏*/
+#two{background:#fff;width:100%;height:650px;position:fixed;left:0;top:-10000px;transition:.5s all ease;overflow:hidden;z-index:6;}
+
+#work{position:absolute;left:0;top:0;width:100%;height:2300px;background:url(../images/2.jpg);overflow:hidden;}
+
+#first{padding-top:100px;background:#003333;}
+#first p{width:100%;height:150px;background:#003333;text-align:center;line-height:150px;font-size:50px;font-weight:bold;}
+#first .mafan{width:100%;height:540px;position:relative;}
+#first ul{width:900px;height:540px;margin:0 auto;}
+#first li{border-radius:10px;width:150px;height:150px;float:left;margin:15px;text-align:center;line-height:150px;position:relative;overflow:hidden;background:#660000;}
+#first li a{color:#fff;font-size:25px;}
+#first li a span{font-size:20px;color:#000;line-height:70px;}
+#first span{width:100%;height:100%;position:absolute;left:0;top:150px;background:rgba(153,255,0,.2);}
+
+
+#second{width:100%;height:700px;background:#300;}
+#second p{width:100%;height:150px;text-align:center;line-height:150px;font-size:50px;font-weight:bold;color:#fff;}
+#second ul{width:900px;height:550px;margin:0 auto;}
+#second li{transition:0.5s all ease;border-radius:10px;width:150px;height:150px;float:left;margin:15px;text-align:center;line-height:150px;position:relative;overflow:hidden;background:#fff;}
+#second div{width:100%;height:300px;position:absolute;top:0;left:0;transition:.6s all ease;}
+#second span{height:150px;width:150px;color:#fff;display:block;}
+#second .name{background:#90F;font-size:22px;font-weight:bold;}
+#second .word{background:#FF0;color:#000;line-height:30px;text-align:left;padding-top:15px;text-indent:1rem;font-size:18px;}
+
+
+#thirdly{background:#000;width:100%;height:900px;}
+#thirdly p{width:100%;height:100px;text-align:center;line-height:100px;font-size:50px;font-weight:bold;color:#fff;}
+#main{width:300px;height:300px;margin:100px auto;position:relative;}
+#main span{position:absolute;background:#00F;width:200px;height:300px;z-index:11;opacity:0;}
+#main #prev{left:-200px;top:0;}
+#main #next{right:-200px;top:0;}
+#main ul{width:300px;height:300px;position:relative;}
+#main li{text-align:center;width:100%;height:100%;background:#399;opacity:0;-webkit-box-reflect:below 10px -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.5));transition:.5s all ease;position:absolute;left:0;top:0; transform:perspective(800px) translateX(0px) rotateY(0deg);}
+#main li.l2{ opacity:0; transform:perspective(800px) translateX(-280px) rotateY(60deg); z-index:8;}
+#main li.l1{opacity:0.8;transform:perspective(800px) translateX(-220px) rotateY(60deg);z-index:9;}
+#main li.cur{opacity:1;z-index:10}
+#main li.r1{opacity:0.8;transform:perspective(800px) translateX(220px) rotateY(-60deg);z-index:9;}
+#main li.r2{opacity:0;transform:perspective(800px) translateX(280px) rotateY(-60deg); z-index:8;}
+#main li a{color:#fff;font-size:35px;line-height:300px;font-weight:bold;display:block;width:100%;height:100%;}
+
+/*第三屏*/
+#three{width:100%;height:10px;}
+#other{width:100%;height:1100px;position:absolute;left:0;top:1900px;background:#000;text-align:center;line-height:1100px;color:#fff;font-size:100px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

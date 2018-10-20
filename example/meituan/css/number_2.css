@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; list-style:none; text-decoration:none;}
+.clearFix:after{ content:''; clear:both; display:block; }
+.clearFix{ zoom:1; }
+.fl{ float:left; display:inline; }
+.fr{ float:right; display:inline; }
+
+
+.aty{ width:206px; border:1px solid #e8e8e8; border-top:2px solid #2bb8aa; position:absolute; right:0; top:0; }
+.aty_tit{ border-bottom:1px solid #eee; height:27px; padding:10px 10px 0 10px; }
+.aty_tit span{ font-size:15px; color:#f66022; background: url(../images/mei_bg.png) no-repeat 0; padding-left:17px; }
+.aty_tit  a{ font-size:12px; color:#666; margin-top:4px;}
+.aty_ad{ position:relative; }
+.ad_img{ overflow:hidden; }
+.ad_img a{ display:none;  }
+.ad_img img{ width:206px; height:158px; vertical-align:top;}
+.ad_img .show{ display:block; }
+.ad_btn{ position:absolute; left:50%; bottom:12px; margin-left:-18px;  width:36px; height:7px; }
+.ad_btn span{ width:7px; height:7px; margin-right:5px;  background:url(../images/aty_btn_bg.png) no-repeat 0; float:left; }
+.ad_btn .active{ background:url(../images/aty_btn_bg_active.png) no-repeat 0;}
+.aty_text{ padding:21px 12px 17px 10px; border-bottom:1px dotted #ddd; border-top:1px dotted #ddd;}
+.aty_text li{ height:18px; line-height:18px; font-size:12px; }
+.aty_text span{ color:#f76120; }
+.aty_text a{ color:#666;}
+
+.app_dn{ width:206px; border:1px solid #e8e8e8; }
+.app_dn ul{ padding:0 10px; margin-bottom:-1px;}
+.app_dn li{ padding-top:22px; padding-bottom:18px; height:55px; border-bottom:1px dotted #e8e8e8; }
+.app_dn li i{ float:left; width:60px; height:55px; background:url(../images/app_dn1.png) no-repeat 0; margin-right:10px; }
+.app_dn li a{ float:left;}
+.app_dn li h3{ font-size:16px; color:#323232;}
+.app_dn li div{ margin-top:11px; width:77px; height:17px; background:#3acfb8; padding:6px 0 0 12px; color:#fff; font-size:12px; }
+.app_dn li span{ float:left; height:13px; line-height:13px;  }
+.app_dn li b{ width:13px; height:13px; margin-left:5px; background:url(../images/app_dn1_right.png) no-repeat 0; float:left; }

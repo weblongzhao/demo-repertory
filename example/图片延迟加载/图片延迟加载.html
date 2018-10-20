@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+* { margin:0; padding:0; }
+ul { overflow:hidden; width:966px; margin:0 auto; }
+li { float:left; width:300px; height:300px; list-style:none; margin:10px; border:1px solid red; }
+img { display:block; width:100%; }
+</style>
+<script>
+window.onload=window.onscroll=window.onresize=function (){
+	var aImg=document.getElementsByTagName('img');
+	
+	for (var i=0; i<aImg.length; i++)
+	{
+		var top=getPos(aImg[i]).top;
+		var clientHeight=document.documentElement.clientHeight;
+		var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+		
+		var clientBottom=clientHeight+scrollTop;
+		
+		if (top < clientBottom)
+		{
+			aImg[i].src=aImg[i].getAttribute('_src');
+		}
+	}
+};
+
+function getPos(obj)
+{
+	var left=0;
+	var top=0;
+	
+	while (obj) // null
+	{
+		left+=obj.offsetLeft;
+		top+=obj.offsetTop;
+		
+		obj=obj.offsetParent;
+	}
+	
+	return {left:left, top:top};
+}
+</script>
+</head>
+
+<body>
+	<ul>
+		<li><img _src="images/m1.jpg" /></li>
+		<li><img _src="images/m2.jpg" /></li>
+		<li><img _src="images/m3.jpg" /></li>
+		<li><img _src="images/m4.jpg" /></li>
+		<li><img _src="images/m5.jpg" /></li>
+		<li><img _src="images/m6.jpg" /></li>
+		<li><img _src="images/m7.jpg" /></li>
+		<li><img _src="images/m8.jpg" /></li>
+		<li><img _src="images/m9.jpg" /></li>
+		<li><img _src="images/m10.jpg" /></li>
+		<li><img _src="images/m1.jpg" /></li>
+		<li><img _src="images/m2.jpg" /></li>
+		<li><img _src="images/m3.jpg" /></li>
+		<li><img _src="images/m4.jpg" /></li>
+		<li><img _src="images/m5.jpg" /></li>
+		<li><img _src="images/m6.jpg" /></li>
+		<li><img _src="images/m7.jpg" /></li>
+		<li><img _src="images/m8.jpg" /></li>
+		<li><img _src="images/m9.jpg" /></li>
+		<li><img _src="images/m10.jpg" /></li>
+	</ul>
+</body>
+</html>
+

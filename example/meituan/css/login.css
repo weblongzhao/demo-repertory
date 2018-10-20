@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wjwrap{ width:980px; margin:42px auto 152px;}
+h1{ background:url(../images/wj_logo.png) no-repeat;width:82px; height:54px;margin-bottom:37px;text-indent:-9999em;}
+.bd{ width:980px; margin-bottom:70px;}
+.bd .left{ width:480px; height:370px; margin-right:115px;}
+.bd .left img{ width:100%; height:100%; display:block;}
+.bd .right{ width:260px;}
+.right h2{ font-size:14px; color:#666; padding-right:4px; margin-bottom:10px;}
+.right h2 a{ font-size:12px;color:#666; background:url(../images/wj_login.png) no-repeat right; padding-right:13px;}
+.text input{ width:225px; height:34px;border:1px solid #aaa;color:#757575;font-size:14px; padding-left:33px;}
+.pass input{ width:225px; height:34px;border:1px solid #aaa;color:#757575;font-size:14px; padding-left:33px;}
+.text,.pass{ position:relative; width:258px;height:34px; line-height:34px;}
+.text_icon{ background:url(../images/wj_user.png) no-repeat 0; width:18px; height:17px;position:absolute;left:8px;top:8px;}
+.pass_icon{ background:url(../images/wj_lock.png) no-repeat 0; width:16px; height:18px;position:absolute;left:8px;top:8px;}
+.text{ margin-bottom:16px; }
+.pass{ margin-bottom:8px;}
+.checkbox{ width:260px;font-size:12px;color:#333; margin-bottom:18px;}
+.check_user{  height:15px; margin-right:5px;}
+.check_login{ height:15px;}
+.checkbox input{ width:15px; height:15px; }
+.check_a{ font-size:12px; color:#2bb8aa; }
+.btn_login{ margin-bottom:23px;}
+.right .btn_login input{ width:260px; height:37px; background:#2dbaac; color:#fff; line-height:37px;font-weight:bold;}
+.right .btn_p{ color:#666; font-size:14px;margin-bottom:56px;}
+.btn_p a{ color:#2bb8aa; }
+.right_bottom{ font-size:12px; color:#999; }
+.right_bottom h4{font-weight:normal; margin-bottom:11px;} 
+.mr15{ margin-right:15px;}
+.mr10{ margin-right:10px;}
+.mr11{ margin-right:11px;}
+
+.coop a{ margin-bottom:10px;height:16px; line-height:16px;padding-left:21px; color:#999; }
+.coop .qq{ background:url(../images/wj_qq.png) no-repeat;}
+.coop .pay{ background:url(../images/wj_zhi.png) no-repeat;}
+.coop .weibo{background:url(../images/wj_weibo.png) no-repeat;}
+.coop .baidu{ background:url(../images/wj_baidu.png) no-repeat;}
+.coop .qiu{ background:url(../images/wj_360.png) no-repeat;}
+.coop .more{ padding-left:0; color:#2bb8aa; }
+
+.ft_top{ border-top:1px solid #eee; border-bottom:1px solid #eee; padding:17px 0; margin-bottom:24px; }
+.ft_list{ margin-right:130px;}
+.ft_list a{ color:#999; float:left; border-right:1px solid #eee;padding:0 16px 0 17px; font-size:14px; height:14px; line-height:14px; }
+.ft_list .tel_a{ border-right:none;}
+.ft_btm{ color:#999; font-size:12px;}
+
+.edit{ background:url(../images/wj_pen.jpg) no-repeat; width:43px; height:43px; position:absolute; bottom:158px; right:157px;}
+.img{ background:url(../images/wj_img.jpg) no-repeat; width:138px; height:260px;position:absolute; top:70px;right:140px;}
+.img_i{ background:url(../images/wj_close.png) no-repeat; width:9px; height:9px; position:absolute; right:20px;top:115px;}
+

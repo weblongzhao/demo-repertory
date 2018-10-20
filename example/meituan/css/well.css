@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; list-style:none; text-decoration:none;}
+.clearFix:after{ content:''; clear:both; display:block; }
+.clearFix{ zoom:1; }
+.fl{ float:left; display:inline; }
+.fr{ float:right; display:inline; }
+
+
+.wlsp_box{ width:980px; border:1px solid #eee;  margin:0 auto; margin-top:14px; margin-bottom:35px; }
+.wlsp{ width:965px; background:#f6f6f6; padding-left:15px; height:45px; margin-bottom:15px; }
+.wlsp_titl h2{ font-size:20px; height:45px; line-height:45px; float:left; background:url(../images/wlsp_cok_bg.png) no-repeat 0; padding-left:25px; }
+.wlsp_tm{ margin-top:11px; height:26px; line-height:26px; text-align:center; }
+.wlsp_tm span{ margin:0 5px 0 15px; font-size:14px; color:#999; float:left;}
+.wlsp_tm b{ width:30px; height:26px; background:#a9abb1; float:left;  color:#fff; }
+.wlsp_tm strong{ float:left; width:13px;  color:#a9abb1;}
+.wlsp_titr{ width:76px; height:19px; border:1px solid #e3e3e3; border-bottom:1px solid #aaa; margin:12px 15px 0 0; font-size:12px; text-align:center; line-height:19px;  }
+.wlsp_titr a{ color:#333;}
+.wlsp_cont{ padding-left:15px; font-size:12px; overflow:hidden; }
+.wlsp_cont ul{ width:980px;}
+.wlsp_cont li{ margin-right:38px; float:left; }
+.wlsp_cont_text{ height:38px; line-height:38px; }
+.wlsp_cont p{  color:#666; height:52px; line-height:52px;  }
+.wlsp_cont b{ float:left; font-size:13px; margin-right:6px; color:#f76120;}
+.wlsp_cont span{ float:left; width:103px; height:18px; background:#f76120; color:#fff; text-align:center; line-height:18px; margin-top:10px;}
